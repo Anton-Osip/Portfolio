@@ -8,7 +8,7 @@ type SkillPropsType = {
 	viewBox: string
 }
 
-export default function Skill(props: SkillPropsType) {
+export function Skill(props: SkillPropsType) {
 	return (
 		<StyledSkill>
 			<Icon

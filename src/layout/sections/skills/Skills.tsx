@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { FlexWrapper } from '../../../components/FlexWrapper'
 import { SectionSubtitle } from '../../../components/SectionSubtitle'
 import { SectionTitle } from '../../../components/SectionTitle'
-import Skill from './skill/Skill'
+import { Skill } from './skill/Skill'
 
 export function Skills() {
 	return (
