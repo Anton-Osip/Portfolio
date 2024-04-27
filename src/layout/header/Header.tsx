@@ -1,14 +1,17 @@
 import styled from 'styled-components'
-import Logo from '../../components/logo/Logo'
-import Menu from '../../components/menu/Menu'
-import Social from '../../components/social/Social'
+import { FlexWrapper } from '../../components/FlexWrapper'
+import { Logo } from '../../components/logo/Logo'
+import { Menu } from '../../components/menu/Menu'
+import { Social } from '../../components/social/Social'
 
 export function Header() {
 	return (
 		<StyledHeader>
 			<Logo />
-			<Menu />
-			<Social />
+			<FlexWrapper align='center' gap='50'>
+				<Menu />
+				<Social />
+			</FlexWrapper>
 		</StyledHeader>
 	)
 }
