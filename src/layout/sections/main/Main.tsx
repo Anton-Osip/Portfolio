@@ -18,8 +18,8 @@ export function Main() {
 
 const MainTitle = styled.h1``
 
-const StyledMain = styled.div`
-	background-color: #f59d9d;
+const StyledMain = styled.main`
+	background-color: #f5e89d;
 	min-height: 100lvh;
 `
 
