@@ -16,7 +16,7 @@ export function Project(props: ProjectPropsType) {
 			<ProjectTitle>{props.projectTitle}</ProjectTitle>
 			<ProjectDescription>{props.projectDescription}</ProjectDescription>
 			<ProjectStack>Tech stack : {props.projectDescription}</ProjectStack>
-			<FlexWrapper>
+			<FlexWrapper gap='48'>
 				<ProjectLink>
 					<Icon iconId='linkIcon' width='20' height='20' viewBox='0 0 20 20' />
 					Live Preview
