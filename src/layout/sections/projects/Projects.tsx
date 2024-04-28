@@ -11,7 +11,7 @@ import proj3 from '../../../assets/image/proj-4.webp'
 import proj4 from '../../../assets/image/proj-5.webp'
 import proj5 from '../../../assets/image/proj-6.webp'
 
-export default function Projects() {
+export function Projects() {
 	return (
 		<StyledProjects>
 			<SectionTitle>Projects</SectionTitle>
