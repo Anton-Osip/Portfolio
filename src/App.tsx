@@ -1,3 +1,4 @@
+import { Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
 import { Footer } from './layout/footer/Footer'
 import { Header } from './layout/header/Header'
@@ -11,11 +12,14 @@ function App() {
 	return (
 		<div className='App'>
 			<Header />
-			<Main />
-			<About />
-			<Skills />
-			<Projects />
-			<MailMe />
+			<Routes>
+				<Route path='/' element={<Navigate to={'/home'} />} />
+				<Route path='/home' element={<Main />} />
+				<Route path='/about' element={<About />} />
+				<Route path='/skills' element={<Skills />} />
+				<Route path='/projects' element={<Projects />} />
+				<Route path='/contact' element={<MailMe />} />
+			</Routes>
 			<Footer />
 		</div>
 	)

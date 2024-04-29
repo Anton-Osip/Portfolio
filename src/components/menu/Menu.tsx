@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
 export function Menu() {
@@ -5,19 +6,19 @@ export function Menu() {
 		<StyledMenu>
 			<ul>
 				<li>
-					<a href='#a'>Home</a>
+					<NavLink to={'/home'}>Home</NavLink>
 				</li>
 				<li>
-					<a href='#a'>About</a>
+					<NavLink to={'/about'}>About</NavLink>
 				</li>
 				<li>
-					<a href='#a'>Tech Stack</a>
+					<NavLink to={'/skills'}>Tech Stack</NavLink>
 				</li>
 				<li>
-					<a href='#a'>Projects</a>
+					<NavLink to={'/projects'}>Projects</NavLink>
 				</li>
 				<li>
-					<a href='#a'>Contact</a>
+					<NavLink to={'/contact'}>Contact</NavLink>
 				</li>
 			</ul>
 		</StyledMenu>
