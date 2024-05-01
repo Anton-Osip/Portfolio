@@ -11,17 +11,30 @@ export function Social() {
 						width='30'
 						height='30'
 						viewBox='0 0 30 30'
+						color='#666666'
 					/>
 				</a>
 			</li>
 			<li>
 				<a href='#dfg'>
-					<Icon iconId='twIcon' width='30' height='30' viewBox='0 0 30 30' />
+					<Icon
+						iconId='twitterIcon'
+						width='30'
+						height='30'
+						viewBox='0 0 30 30'
+						color='#666666'
+					/>
 				</a>
 			</li>
 			<li>
 				<a href='#dfg'>
-					<Icon iconId='inIcon' width='30' height='30' viewBox='0 0 30 30' />
+					<Icon
+						iconId='linkedinIcon'
+						width='30'
+						height='30'
+						viewBox='0 0 30 30'
+						color='#666666'
+					/>
 				</a>
 			</li>
 		</StyledSocial>

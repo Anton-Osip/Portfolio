@@ -1,9 +1,10 @@
+import { NavLink } from 'react-router-dom'
 import logo from '../../assets/image/logo.svg'
 
 export function Logo() {
 	return (
-		<a href='#dfg'>
+		<NavLink to={'/home'}>
 			<img src={logo} alt='logo' />
-		</a>
+		</NavLink>
 	)
 }

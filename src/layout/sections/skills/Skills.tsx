@@ -38,41 +38,41 @@ export function Skills() {
 					viewBox='0 0 105 100'
 				/>
 				<Skill
-					iconId='htmlIcon'
+					iconId='bootstrapIcon'
+					width='88'
+					height='87'
+					viewBox='0 0 88 87'
+				/>
+				<Skill
+					iconId='tailwindIcon'
+					width='131'
+					height='131'
+					viewBox='0 0 131 131'
+				/>
+				<Skill iconId='sassIcon' width='117' height='87' viewBox='0 0 117 87' />
+				<Skill
+					iconId='gitIcon'
+					width='105'
+					height='105'
+					viewBox='0 0 105 105'
+				/>
+				<Skill
+					iconId='greensockIcon'
 					width='120'
 					height='120'
 					viewBox='0 0 120 120'
 				/>
 				<Skill
-					iconId='cssIcon'
-					width='120'
-					height='120'
-					viewBox='0 0 120 120'
-				/>
-				<Skill iconId='jsIcon' width='120' height='120' viewBox='0 0 120 120' />
-				<Skill
-					iconId='reactIcon'
-					width='113'
-					height='101'
-					viewBox='0 0 113 101'
+					iconId='vscodeIcon'
+					width='112'
+					height='112'
+					viewBox='0 0 112 112'
 				/>
 				<Skill
-					iconId='reduxIcon'
-					width='105'
-					height='100'
-					viewBox='0 0 105 100'
-				/>
-				<Skill
-					iconId='reactIcon'
-					width='113'
-					height='101'
-					viewBox='0 0 113 101'
-				/>
-				<Skill
-					iconId='reduxIcon'
-					width='105'
-					height='100'
-					viewBox='0 0 105 100'
+					iconId='githubSkillIcon'
+					width='88'
+					height='88'
+					viewBox='0 0 88 88'
 				/>
 			</FlexWrapper>
 		</StyledSkills>

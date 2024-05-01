@@ -23,7 +23,7 @@ export function Project(props: ProjectPropsType) {
 				</ProjectLink>
 				<ProjectLink>
 					<Icon
-						iconId='githubIcon'
+						iconId='githubProjectIcon'
 						width='20'
 						height='20'
 						viewBox='0 0 20 20'

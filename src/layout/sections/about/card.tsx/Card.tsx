@@ -18,10 +18,11 @@ export function Card(props: CardPropsType) {
 			<FlexWrapper justify='space-between'>
 				<StyledCardText>
 					<Icon
-						iconId='office-buildingIcon'
+						iconId='officeBuildingIcon'
 						width='16'
 						height='12'
 						viewBox='0 0 16 12'
+						color='#a7a7a7'
 					/>
 					{props.office}
 				</StyledCardText>
@@ -32,6 +33,7 @@ export function Card(props: CardPropsType) {
 							width='16'
 							height='12'
 							viewBox='0 0 16 12'
+							color='#a7a7a7'
 						/>
 						{props.location}
 					</StyledCardText>
@@ -45,6 +47,7 @@ export function Card(props: CardPropsType) {
 						width='16'
 						height='12'
 						viewBox='0 0 16 12'
+						color='#a7a7a7'
 					/>
 					{props.calendar}
 				</StyledCardText>
