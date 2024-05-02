@@ -15,5 +15,4 @@ export function About() {
 
 const StyledAbout = styled.section`
 	min-height: 100lvh;
-	background-color: #aebff8;
 `

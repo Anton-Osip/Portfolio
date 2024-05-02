@@ -11,6 +11,4 @@ export function Footer() {
 	)
 }
 
-const StyledFooter = styled.footer`
-	background-color: #f6f8a3;
-`
+const StyledFooter = styled.footer``

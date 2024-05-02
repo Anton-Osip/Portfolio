@@ -11,7 +11,7 @@ export function Social() {
 						width='30'
 						height='30'
 						viewBox='0 0 30 30'
-						color='#666666'
+						color='#a7a7a7'
 					/>
 				</a>
 			</li>
@@ -22,7 +22,7 @@ export function Social() {
 						width='30'
 						height='30'
 						viewBox='0 0 30 30'
-						color='#666666'
+						color='#a7a7a7'
 					/>
 				</a>
 			</li>
@@ -33,7 +33,7 @@ export function Social() {
 						width='30'
 						height='30'
 						viewBox='0 0 30 30'
-						color='#666666'
+						color='#a7a7a7'
 					/>
 				</a>
 			</li>

@@ -80,6 +80,5 @@ export function Skills() {
 }
 
 const StyledSkills = styled.section`
-	background-color: #bebebe;
 	min-height: 100lvh;
 `

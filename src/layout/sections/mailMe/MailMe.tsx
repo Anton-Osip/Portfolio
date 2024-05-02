@@ -10,7 +10,6 @@ export function MailMe() {
 }
 
 const StyledMailMe = styled.section`
-	background-color: #ffa9a9;
 	min-height: 100lvh;
 	display: flex;
 	flex-direction: column;
