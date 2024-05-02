@@ -1,19 +1,28 @@
-import './App.css';
-import styled from 'styled-components';
-
+import { Navigate, Route, Routes } from 'react-router-dom'
+import './App.css'
+import { Footer } from './layout/footer/Footer'
+import { Header } from './layout/header/Header'
+import { About } from './layout/sections/about/About'
+import { MailMe } from './layout/sections/mailMe/MailMe'
+import { Main } from './layout/sections/main/Main'
+import { Projects } from './layout/sections/projects/Projects'
+import { Skills } from './layout/sections/skills/Skills'
 
 function App() {
-    return (
-        <div className="App">
-            <Title>Welcome to IT-INCUBATOR</Title>
-        </div>
-    );
+	return (
+		<div className='App'>
+			<Header />
+			<Routes>
+				<Route path='/' element={<Navigate to={'/home'} />} />
+				<Route path='/home' element={<Main />} />
+				<Route path='/about' element={<About />} />
+				<Route path='/skills' element={<Skills />} />
+				<Route path='/projects' element={<Projects />} />
+				<Route path='/contact' element={<MailMe />} />
+			</Routes>
+			<Footer />
+		</div>
+	)
 }
 
-export default App;
-
-const Title = styled.h1`
-    font-size: 1.5em;
-    text-align: center;
-    color: #e91e63;
-`;
+export default App
