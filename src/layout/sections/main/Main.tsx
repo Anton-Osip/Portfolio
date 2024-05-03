@@ -24,7 +24,7 @@ export function Main() {
 	)
 }
 const StyledMain = styled.section`
-	min-height: 100lvh;
+	min-height: calc(100lvh - 157px);
 	display: flex;
 	background-image: url(${abstract});
 	background-repeat: no-repeat;

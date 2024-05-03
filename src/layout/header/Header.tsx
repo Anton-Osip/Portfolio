@@ -23,9 +23,4 @@ export function Header() {
 
 const StyledHeader = styled.header`
 	padding: 67px 0 25px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 9999;
 `
