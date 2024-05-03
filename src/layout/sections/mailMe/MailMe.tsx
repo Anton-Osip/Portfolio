@@ -1,11 +1,15 @@
 import styled from 'styled-components'
+import { Footer } from '../../footer/Footer'
 
 export function MailMe() {
 	return (
-		<StyledMailMe>
-			<StyledDescription>For any questions please mail me:</StyledDescription>
-			<StyledLink href='mailto:hi@pavanmg.in'>hi@pavanmg.in </StyledLink>
-		</StyledMailMe>
+		<>
+			<StyledMailMe>
+				<StyledDescription>For any questions please mail me:</StyledDescription>
+				<StyledLink href='mailto:hi@pavanmg.in'>hi@pavanmg.in </StyledLink>
+			</StyledMailMe>
+			<Footer />
+		</>
 	)
 }
 
