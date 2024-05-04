@@ -6,6 +6,7 @@ type SkillPropsType = {
 	width: string
 	height: string
 	viewBox: string
+	color?: string
 }
 
 export function Skill(props: SkillPropsType) {
@@ -16,6 +17,7 @@ export function Skill(props: SkillPropsType) {
 				width={props.width}
 				height={props.height}
 				viewBox={props.viewBox}
+				color={props.color}
 			/>
 		</StyledSkill>
 	)

@@ -61,6 +61,7 @@ export function Skills() {
 					width='120'
 					height='120'
 					viewBox='0 0 120 120'
+					color='#fff'
 				/>
 				<Skill
 					iconId='vscodeIcon'
@@ -73,6 +74,7 @@ export function Skills() {
 					width='88'
 					height='88'
 					viewBox='0 0 88 88'
+					color='#fff'
 				/>
 			</FlexWrapper>
 		</StyledSkills>
@@ -80,5 +82,8 @@ export function Skills() {
 }
 
 const StyledSkills = styled.section`
-	min-height: 100lvh;
+	min-height: calc(100lvh - 157px);
+	display: flex;
+	flex-direction: column;
+	padding: 100px 0 50px;
 `
