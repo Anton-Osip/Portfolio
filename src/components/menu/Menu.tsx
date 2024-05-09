@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
+import { theme } from '../../styles/Theme'
 
 export function Menu() {
 	return (
@@ -29,5 +30,19 @@ const StyledMenu = styled.nav`
 	ul {
 		display: flex;
 		gap: 50px;
+	}
+
+	a {
+		font-family: DM Sans;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 26px;
+		letter-spacing: 0px;
+		color: ${theme.colors.accentColor};
+	}
+
+	a:hover,
+	a.active {
+		color: ${theme.colors.mainTitleColor};
 	}
 `

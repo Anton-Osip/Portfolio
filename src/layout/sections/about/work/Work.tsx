@@ -1,9 +1,10 @@
+import styled from 'styled-components'
 import { StyledTitle } from '../StyledTitle'
 import { Card } from '../card.tsx/Card'
 
 export function Work() {
 	return (
-		<div>
+		<StyledWork>
 			<StyledTitle>Work Experience</StyledTitle>
 			<Card
 				title='Junior Web Developer'
@@ -26,6 +27,10 @@ export function Work() {
 				location='Bengaluru'
 				calendar='Sep 2021 - Dec 2021'
 			/>
-		</div>
+		</StyledWork>
 	)
 }
+const StyledWork = styled.div`
+	max-width: 704px;
+	margin-bottom: 38px;
+`

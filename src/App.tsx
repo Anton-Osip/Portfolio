@@ -1,6 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
-import { Footer } from './layout/footer/Footer'
 import { Header } from './layout/header/Header'
 import { About } from './layout/sections/about/About'
 import { MailMe } from './layout/sections/mailMe/MailMe'
@@ -20,7 +19,6 @@ function App() {
 				<Route path='/projects' element={<Projects />} />
 				<Route path='/contact' element={<MailMe />} />
 			</Routes>
-			<Footer />
 		</div>
 	)
 }

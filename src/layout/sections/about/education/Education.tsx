@@ -1,9 +1,10 @@
+import styled from 'styled-components'
 import { StyledTitle } from '../StyledTitle'
 import { Card } from '../card.tsx/Card'
 
 export default function Education() {
 	return (
-		<div>
+		<StyledEducation>
 			<StyledTitle>Education</StyledTitle>
 			<Card
 				title='Junior Web Developer'
@@ -11,6 +12,11 @@ export default function Education() {
 				office='Dr. Rajkumar’s Learning App'
 				calendar='Sep 2021 - Dec 2021'
 			/>
-		</div>
+		</StyledEducation>
 	)
 }
+
+const StyledEducation = styled.div`
+	max-width: 704px;
+	margin-bottom: 38px;
+`
