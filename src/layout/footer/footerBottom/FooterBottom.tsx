@@ -25,12 +25,11 @@ const StyledFooterBottom = styled.div`
 `
 
 const StyledFooterText = styled.p`
-	color: ${theme.colors.accentColor};
-	font-family: Poppins;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 26px;
 	letter-spacing: 0px;
+	color: ${theme.colors.accentColor};
 	span:nth-child(1) {
 		background: linear-gradient(90deg, #7368d4, #9a4ac6);
 		background-clip: text;

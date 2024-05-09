@@ -17,15 +17,14 @@ export function AboutMe() {
 }
 
 const StyledAboutMe = styled.div`
-	margin-bottom: 38px;
 	max-width: 708px;
+	margin-bottom: 38px;
 `
 
 const StyledAboutText = styled.p`
-	color: ${theme.colors.accentColor};
-	font-family: Poppins;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 26px;
 	letter-spacing: 0px;
+	color: ${theme.colors.accentColor};
 `

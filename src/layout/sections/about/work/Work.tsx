@@ -31,6 +31,6 @@ export function Work() {
 	)
 }
 const StyledWork = styled.div`
-	margin-bottom: 38px;
 	max-width: 704px;
+	margin-bottom: 38px;
 `

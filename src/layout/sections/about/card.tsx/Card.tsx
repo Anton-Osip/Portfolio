@@ -61,28 +61,28 @@ export function Card(props: CardPropsType) {
 }
 
 const StyledCard = styled.div`
-	border-bottom: 2px solid #ebeaed;
-	padding-bottom: 24px;
 	margin-bottom: 30px;
+	padding-bottom: 24px;
+	border-bottom: 2px solid #ebeaed;
 `
 const StyledCardTitle = styled.h4`
-	color: ${theme.colors.mainTitleColor};
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 28px;
 	letter-spacing: 1px;
+	color: ${theme.colors.mainTitleColor};
 `
 const StyledCardTime = styled.div`
 	padding: 7px 22px;
+	margin-bottom: 15px;
 	color: #018c0f;
 	background-color: #d7ffe0;
 	border-radius: 100px;
-	margin-bottom: 15px;
 `
 const StyledCardText = styled.p`
-	color: ${theme.colors.accentColor};
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 28px;
 	letter-spacing: 1px;
+	color: ${theme.colors.accentColor};
 `

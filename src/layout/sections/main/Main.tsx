@@ -61,10 +61,10 @@ const PhotoWrapper = styled.div`
 	}
 `
 const Photo = styled.img`
+	position: relative;
+	z-index: 5;
 	width: 349px;
 	height: 349px;
 	object-fit: cover;
 	border-radius: 50%;
-	position: relative;
-	z-index: 5;
 `

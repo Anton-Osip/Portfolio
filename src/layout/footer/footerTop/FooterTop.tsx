@@ -22,13 +22,14 @@ const StyledFooterTop = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	padding-bottom: 42px;
+
 	border-bottom: 2px solid rgba(66, 68, 110, 0.3);
 `
 const StyledLink = styled.a`
-	color: ${theme.colors.accentColor};
 	font-family: DM Sans;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 26px;
 	letter-spacing: 0px;
+	color: ${theme.colors.accentColor};
 `

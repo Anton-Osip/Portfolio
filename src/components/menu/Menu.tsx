@@ -33,12 +33,12 @@ const StyledMenu = styled.nav`
 	}
 
 	a {
-		color: ${theme.colors.accentColor};
 		font-family: DM Sans;
 		font-size: 20px;
 		font-weight: 500;
 		line-height: 26px;
 		letter-spacing: 0px;
+		color: ${theme.colors.accentColor};
 	}
 
 	a:hover,

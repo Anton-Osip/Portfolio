@@ -54,29 +54,29 @@ const ProjectImage = styled.img`
 	margin-bottom: 27px;
 `
 const ProjectTitle = styled.h4`
+	margin-bottom: 17px;
 	padding: 0 30px;
 	font-size: 28px;
 	font-weight: 500;
 	line-height: 26px;
 	letter-spacing: 0px;
 	text-align: center;
-	margin-bottom: 17px;
 `
 const ProjectDescription = styled.p`
 	padding: 0 30px;
+	margin-bottom: 12px;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 26px;
 	letter-spacing: 0px;
-	margin-bottom: 12px;
 `
 const ProjectStack = styled.p`
+	margin-bottom: 21px;
+	padding: 0 30px;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 26px;
 	letter-spacing: 0px;
-	padding: 0 30px;
-	margin-bottom: 21px;
 `
 const ProjectLink = styled.a`
 	color: #ffffff;
@@ -87,14 +87,13 @@ const ProjectLink = styled.a`
 	text-align: left;
 	text-decoration-line: underline;
 	cursor: pointer;
-
 	svg {
 		margin-right: 12px;
 	}
 `
 
 const ProjectLinks = styled.div`
-	padding: 0 30px 30px;
 	display: flex;
 	justify-content: space-between;
+	padding: 0 30px 30px;
 `

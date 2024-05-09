@@ -39,5 +39,4 @@ main,
 section {
 	background-color:${theme.colors.primaryBg};
 }
-
 `

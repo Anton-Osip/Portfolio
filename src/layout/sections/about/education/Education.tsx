@@ -17,6 +17,6 @@ export default function Education() {
 }
 
 const StyledEducation = styled.div`
-	margin-bottom: 38px;
 	max-width: 704px;
+	margin-bottom: 38px;
 `

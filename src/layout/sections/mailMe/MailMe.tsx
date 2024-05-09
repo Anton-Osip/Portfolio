@@ -22,23 +22,23 @@ const StyledMailMe = styled.section`
 	justify-content: center;
 `
 const StyledDescription = styled.p`
-	color: ${theme.colors.fontColor};
 	font-family: DM Sans;
 	font-size: 58px;
 	font-weight: 700;
 	line-height: 70px;
 	letter-spacing: -1px;
 	text-align: center;
+	color: ${theme.colors.fontColor};
 `
 const StyledLink = styled.a`
+	font-family: DM Sans;
+	font-size: 58px;
+	font-weight: 700;
+	line-height: 70px;
+	letter-spacing: -1px;
+	text-align: center;
 	background: linear-gradient(90deg, rgb(19, 176, 245), rgb(231, 15, 170));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
-	font-family: DM Sans;
-	font-size: 58px;
-	font-weight: 700;
-	line-height: 70px;
-	letter-spacing: -1px;
-	text-align: center;
 `
