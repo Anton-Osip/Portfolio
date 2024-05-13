@@ -45,4 +45,21 @@ const StyledMenu = styled.nav`
 	a.active {
 		color: ${theme.colors.mainTitleColor};
 	}
+
+	@media ${theme.media.tablet} {
+		width: 100%;
+
+		ul {
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+		}
+
+		a {
+			display: inline-block;
+			font-size: 34px;
+			line-height: 40px;
+			width: 100%;
+		}
+	}
 `
