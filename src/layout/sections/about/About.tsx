@@ -5,6 +5,7 @@ import Education from './education/Education'
 import { Work } from './work/Work'
 
 import drawing from '../../../assets/image/drawing.svg'
+import { theme } from '../../../styles/Theme'
 
 export function About() {
 	return (
@@ -24,4 +25,9 @@ const StyledAbout = styled.section`
 	background-image: url(${drawing});
 	background-repeat: no-repeat;
 	background-position: right center;
+
+	@media ${theme.media.tablet} {
+		min-height: calc(100lvh - 116px);
+		padding: 30px 0;
+	}
 `
