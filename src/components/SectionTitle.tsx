@@ -9,4 +9,13 @@ export const SectionTitle = styled.h2`
 	letter-spacing: 0px;
 	text-align: center;
 	color: ${theme.colors.fontColor};
+	@media ${theme.media.tablet} {
+		font-size: 34px;
+		line-height: 36px;
+		margin-bottom: 40px;
+	}
+	@media ${theme.media.mobile} {
+		font-size: 28px;
+		line-height: 30px;
+	}
 `

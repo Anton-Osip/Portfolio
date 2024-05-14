@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import { Container } from '../../../components/Container'
-import { FlexWrapper } from '../../../components/FlexWrapper'
 import { SectionSubtitle } from '../../../components/SectionSubtitle'
 import { SectionTitle } from '../../../components/SectionTitle'
+import { theme } from '../../../styles/Theme'
 import { Skill } from './skill/Skill'
 
 export function Skills() {
@@ -13,7 +13,7 @@ export function Skills() {
 				<SectionSubtitle>
 					Technologies I’ve been working with recently
 				</SectionSubtitle>
-				<FlexWrapper justify='space-between' wrap='wrap'>
+				<SkillsContainer>
 					<Skill
 						iconId='htmlIcon'
 						width='120'
@@ -88,7 +88,7 @@ export function Skills() {
 						viewBox='0 0 88 88'
 						color='#fff'
 					/>
-				</FlexWrapper>
+				</SkillsContainer>
 			</Container>
 		</StyledSkills>
 	)
@@ -97,4 +97,21 @@ export function Skills() {
 const StyledSkills = styled.section`
 	min-height: calc(100lvh - 157px);
 	padding: 100px 0 50px;
+	@media ${theme.media.tablet} {
+		min-height: calc(100lvh - 116px);
+		padding: 30px 0;
+	}
+`
+
+const SkillsContainer = styled.div`
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-auto-flow: row;
+
+	@media ${theme.media.tablet} {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	@media ${theme.media.mobile} {
+		grid-template-columns: repeat(2, 1fr);
+	}
 `
