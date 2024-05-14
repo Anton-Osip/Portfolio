@@ -43,8 +43,6 @@ export function Project(props: ProjectPropsType) {
 }
 
 const StyledProject = styled.div`
-	max-width: calc(33% - 30px);
-	margin-bottom: 60px;
 	border-radius: 20px;
 	box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
 	background: ${theme.colors.secondaryBg};
@@ -55,28 +53,42 @@ const ProjectImage = styled.img`
 `
 const ProjectTitle = styled.h4`
 	margin-bottom: 17px;
-	padding: 0 30px;
+	padding: 0 25px;
 	font-size: 28px;
 	font-weight: 500;
 	line-height: 26px;
 	letter-spacing: 0px;
 	text-align: center;
+	@media ${theme.media.tablet} {
+		padding: 0 15px;
+		font-size: 22px;
+	}
 `
 const ProjectDescription = styled.p`
-	padding: 0 30px;
+	padding: 0 25px;
 	margin-bottom: 12px;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 26px;
 	letter-spacing: 0px;
+	@media ${theme.media.tablet} {
+		padding: 0 15px;
+		font-size: 16px;
+		line-height: 20px;
+	}
 `
 const ProjectStack = styled.p`
 	margin-bottom: 21px;
-	padding: 0 30px;
+	padding: 0 25px;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 26px;
 	letter-spacing: 0px;
+	line-height: 26px;
+	@media ${theme.media.tablet} {
+		padding: 0 15px;
+		line-height: 20px;
+	}
 `
 const ProjectLink = styled.a`
 	color: #ffffff;
@@ -95,5 +107,8 @@ const ProjectLink = styled.a`
 const ProjectLinks = styled.div`
 	display: flex;
 	justify-content: space-between;
-	padding: 0 30px 30px;
+	padding: 0 8px 25px;
+	@media ${theme.media.tablet} {
+		padding: 0 15px 15px;
+	}
 `

@@ -18,5 +18,6 @@ export const SectionSubtitle = styled.p`
 	@media ${theme.media.mobile} {
 		font-size: 22px;
 		line-height: 24px;
+		margin-bottom: 40px;
 	}
 `
