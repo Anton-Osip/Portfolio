@@ -18,8 +18,8 @@ export function Card(props: CardPropsType) {
 				<StyledCardTitle>{props.title}</StyledCardTitle>
 				<StyledCardTime>{props.time}</StyledCardTime>
 			</FlexWrapper>
-			<FlexWrapper justify='space-between' align='center'>
-				<FlexWrapper gap='24' align='center'>
+			<FlexWrapper justify='space-between' align='center' wrap='wrap'>
+				<FlexWrapper gap='24' align='center' wrap='wrap'>
 					<StyledCardText>
 						<Icon
 							iconId='officeBuildingIcon'
@@ -75,6 +75,7 @@ const StyledCardTitle = styled.h4`
 const StyledCardTime = styled.div`
 	padding: 7px 22px;
 	margin-bottom: 15px;
+	white-space: nowrap;
 	color: #018c0f;
 	background-color: #d7ffe0;
 	border-radius: 100px;

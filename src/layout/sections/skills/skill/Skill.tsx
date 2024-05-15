@@ -24,9 +24,9 @@ export function Skill(props: SkillPropsType) {
 }
 
 const StyledSkill = styled.div`
-	min-width: 16%;
+	width: 100%;
+	aspect-ratio: 1/1;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 80px;
 `

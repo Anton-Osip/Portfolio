@@ -8,7 +8,6 @@ type IconPropsType = {
 	color?: string
 }
 export function Icon(props: IconPropsType) {
-	console.log(props)
 	return (
 		<svg
 			width={props.width || '50'}

@@ -19,6 +19,10 @@ export function AboutMe() {
 const StyledAboutMe = styled.div`
 	max-width: 708px;
 	margin-bottom: 38px;
+	@media ${theme.media.tablet} {
+		margin-bottom: 25px;
+		max-width: 100%;
+	}
 `
 
 const StyledAboutText = styled.p`
@@ -27,4 +31,8 @@ const StyledAboutText = styled.p`
 	line-height: 26px;
 	letter-spacing: 0px;
 	color: ${theme.colors.accentColor};
+	@media ${theme.media.tablet} {
+		font-size: 16px;
+		line-height: 24px;
+	}
 `

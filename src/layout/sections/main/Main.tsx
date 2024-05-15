@@ -9,11 +9,10 @@ export function Main() {
 	return (
 		<StyledMain>
 			<Container>
-				<FlexWrapper align='center' justify='space-between'>
+				<FlexWrapper align='center' justify='space-between' wrap='wrap'>
 					<MainTitle>
-						Hi 👋,
-						<br /> My name is <br />
-						<span>Pavan MG</span> <br />I build things for web
+						Hi 👋, My name is
+						<span> Pavan MG</span> I build things for web
 					</MainTitle>
 					<PhotoWrapper>
 						<Photo src={photo} alt='photo' />
@@ -29,9 +28,15 @@ const StyledMain = styled.section`
 	background-image: url(${abstract});
 	background-repeat: no-repeat;
 	background-position: right center;
+
+	@media ${theme.media.tablet} {
+		min-height: calc(100lvh - 116px);
+		background-position: center bottom;
+	}
 `
 
 const MainTitle = styled.h1`
+	max-width: 505px;
 	font-size: 58px;
 	font-weight: 700;
 	line-height: 70px;
@@ -43,10 +48,21 @@ const MainTitle = styled.h1`
 		-webkit-text-fill-color: transparent;
 		color: rgb(217, 217, 217);
 	}
+	@media ${theme.media.tablet} {
+		max-width: 100%;
+		text-align: center;
+	}
+	@media ${theme.media.mobile} {
+		font-size: 38px;
+		line-height: 45px;
+	}
 `
 
 const PhotoWrapper = styled.div`
 	position: relative;
+	@media ${theme.media.tablet} {
+		margin: 0 auto;
+	}
 
 	&::before {
 		z-index: 5;
@@ -58,6 +74,10 @@ const PhotoWrapper = styled.div`
 		height: 367px;
 		border-radius: 50%;
 		background: linear-gradient(rgb(231, 15, 170), rgb(19, 176, 245));
+		@media ${theme.media.mobile} {
+			width: 300px;
+			height: 300px;
+		}
 	}
 `
 const Photo = styled.img`
@@ -67,4 +87,8 @@ const Photo = styled.img`
 	height: 349px;
 	object-fit: cover;
 	border-radius: 50%;
+	@media ${theme.media.mobile} {
+		width: 282px;
+		height: 282px;
+	}
 `

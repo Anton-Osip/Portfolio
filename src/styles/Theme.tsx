@@ -6,4 +6,8 @@ export const theme = {
 		fontColor: '#cccccc',
 		mainTitleColor: '#d9d9d9',
 	},
+	media: {
+		tablet: 'screen and (max-width: 964px)',
+		mobile: 'screen and (max-width: 576px)',
+	},
 }
