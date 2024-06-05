@@ -6,7 +6,11 @@ export function Social() {
 	return (
 		<StyledSocial>
 			<li>
-				<a href='#dfg'>
+				<a
+					target='_blank'
+					rel='noreferrer'
+					href='https://github.com/Anton-Osip'
+				>
 					<Icon
 						iconId='githubIcon'
 						width='30'
@@ -16,19 +20,13 @@ export function Social() {
 					/>
 				</a>
 			</li>
+
 			<li>
-				<a href='#dfg'>
-					<Icon
-						iconId='twitterIcon'
-						width='32'
-						height='32'
-						viewBox='0 0 32 32'
-						color='#a7a7a7'
-					/>
-				</a>
-			</li>
-			<li>
-				<a href='#dfg'>
+				<a
+					target='_blank'
+					rel='noreferrer'
+					href='https://www.linkedin.com/in/%D0%B0%D0%BD%D1%82%D0%BE%D0%BD-%D0%BE%D1%81%D0%B8%D0%BF%D1%87%D0%B8%D0%BA-729784216/'
+				>
 					<Icon
 						iconId='linkedinIcon'
 						width='30'

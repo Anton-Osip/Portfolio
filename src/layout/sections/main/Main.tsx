@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import abstract from '../../../assets/image/abstract.svg'
-import photo from '../../../assets/image/photo.jpg'
+import photo from '../../../assets/image/photo.webp'
 import { Container } from '../../../components/Container'
 import { FlexWrapper } from '../../../components/FlexWrapper'
+import { font } from '../../../styles/Common'
 import { theme } from '../../../styles/Theme'
 
 export function Main() {
@@ -37,12 +38,17 @@ const StyledMain = styled.section`
 
 const MainTitle = styled.h1`
 	max-width: 505px;
-	font-size: 58px;
-	font-weight: 700;
-	line-height: 70px;
+	${font({
+		lineHeight: 1.2,
+		weight: 700,
+		Fmax: 58,
+		Fmin: 32,
+	})}
+
 	letter-spacing: -1px;
 	color: ${theme.colors.mainTitleColor};
 	span {
+		white-space: nowrap;
 		background: linear-gradient(45deg, rgb(19, 176, 245), rgb(231, 15, 170));
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -51,10 +57,6 @@ const MainTitle = styled.h1`
 	@media ${theme.media.tablet} {
 		max-width: 100%;
 		text-align: center;
-	}
-	@media ${theme.media.mobile} {
-		font-size: 38px;
-		line-height: 45px;
 	}
 `
 
