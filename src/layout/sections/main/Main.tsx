@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import abstract from '../../../assets/image/abstract.svg'
-import photo from '../../../assets/image/photo.png'
+import photo from '../../../assets/image/photo.jpg'
 import { Container } from '../../../components/Container'
 import { FlexWrapper } from '../../../components/FlexWrapper'
 import { theme } from '../../../styles/Theme'
@@ -12,7 +12,7 @@ export function Main() {
 				<FlexWrapper align='center' justify='space-between' wrap='wrap'>
 					<MainTitle>
 						Hi 👋, My name is
-						<span> Pavan MG</span> I build things for web
+						<span> Osipchyk AV</span> I build things for web
 					</MainTitle>
 					<PhotoWrapper>
 						<Photo src={photo} alt='photo' />
@@ -87,6 +87,7 @@ const Photo = styled.img`
 	height: 349px;
 	object-fit: cover;
 	border-radius: 50%;
+	filter: contrast(100%);
 	@media ${theme.media.mobile} {
 		width: 282px;
 		height: 282px;

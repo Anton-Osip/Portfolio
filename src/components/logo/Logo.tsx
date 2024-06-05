@@ -3,7 +3,7 @@ import logo from '../../assets/image/logo.svg'
 
 export function Logo() {
 	return (
-		<NavLink to={'/home'}>
+		<NavLink to={'/Portfolio/home'}>
 			<img src={logo} alt='logo' />
 		</NavLink>
 	)

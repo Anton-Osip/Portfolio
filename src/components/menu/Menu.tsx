@@ -7,19 +7,19 @@ export function Menu() {
 		<StyledMenu>
 			<ul>
 				<li>
-					<NavLink to={'/home'}>Home</NavLink>
+					<NavLink to={'/Portfolio/home'}>Home</NavLink>
 				</li>
 				<li>
-					<NavLink to={'/about'}>About</NavLink>
+					<NavLink to={'/Portfolio/about'}>About</NavLink>
 				</li>
 				<li>
-					<NavLink to={'/skills'}>Tech Stack</NavLink>
+					<NavLink to={'/Portfolio/skills'}>Tech Stack</NavLink>
 				</li>
 				<li>
-					<NavLink to={'/projects'}>Projects</NavLink>
+					<NavLink to={'/Portfolio/projects'}>Projects</NavLink>
 				</li>
 				<li>
-					<NavLink to={'/contact'}>Contact</NavLink>
+					<NavLink to={'/Portfolio/contact'}>Contact</NavLink>
 				</li>
 			</ul>
 		</StyledMenu>
