@@ -6,7 +6,9 @@ export function MailMe() {
 		<>
 			<StyledMailMe>
 				<StyledDescription>For any questions please mail me:</StyledDescription>
-				<StyledLink href='mailto:hi@pavanmg.in'>hi@pavanmg.in </StyledLink>
+				<StyledLink href='mailto:osipchika@gmail.com'>
+					osipchika@gmail.com
+				</StyledLink>
 			</StyledMailMe>
 		</>
 	)

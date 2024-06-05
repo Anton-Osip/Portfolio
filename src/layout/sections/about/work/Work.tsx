@@ -3,31 +3,31 @@ import { theme } from '../../../../styles/Theme'
 import { StyledTitle } from '../StyledTitle'
 import { Card } from '../card.tsx/Card'
 
+const WorkData = [
+	{
+		id: 'work1',
+		title: 'Engineer',
+		time: 'Full Time',
+		office: 'ООО «Центр адаптивной кинезиотерапии»',
+		location: 'Belarus',
+		calendar: 'Nov 2020 - Aug 2023',
+	},
+]
+
 export function Work() {
 	return (
 		<StyledWork>
 			<StyledTitle>Work Experience</StyledTitle>
-			<Card
-				title='Junior Web Developer'
-				time='Full Time'
-				office='Dr. Rajkumar’s Learning App'
-				location='Bengaluru'
-				calendar='Sep 2021 - Dec 2021'
-			/>
-			<Card
-				title='Junior Web Developer'
-				time='Full Time'
-				office='Dr. Rajkumar’s Learning App'
-				location='Bengaluru'
-				calendar='Sep 2021 - Dec 2021'
-			/>
-			<Card
-				title='Junior Web Developer'
-				time='Full Time'
-				office='Dr. Rajkumar’s Learning App'
-				location='Bengaluru'
-				calendar='Sep 2021 - Dec 2021'
-			/>
+			{WorkData.map(work => (
+				<Card
+					key={work.id}
+					title={work.title}
+					time={work.time}
+					office={work.office}
+					location={work.location}
+					calendar={work.calendar}
+				/>
+			))}
 		</StyledWork>
 	)
 }

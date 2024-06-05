@@ -7,6 +7,8 @@ type ProjectPropsType = {
 	projectTitle: string
 	projectDescription: string
 	projectStack: string
+	link: string
+	projectLink: string
 }
 
 export function Project(props: ProjectPropsType) {
@@ -17,7 +19,7 @@ export function Project(props: ProjectPropsType) {
 			<ProjectDescription>{props.projectDescription}</ProjectDescription>
 			<ProjectStack>Tech stack : {props.projectStack}</ProjectStack>
 			<ProjectLinks>
-				<ProjectLink>
+				<ProjectLink href={props.link} target='_blank'>
 					<Icon
 						iconId='linkIcon'
 						width='20'
@@ -27,7 +29,7 @@ export function Project(props: ProjectPropsType) {
 					/>
 					Live Preview
 				</ProjectLink>
-				<ProjectLink>
+				<ProjectLink href={props.projectLink} target='_blank'>
 					<Icon
 						iconId='githubProjectIcon'
 						width='20'
@@ -46,9 +48,12 @@ const StyledProject = styled.div`
 	border-radius: 20px;
 	box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
 	background: ${theme.colors.secondaryBg};
+	overflow: hidden;
 `
 const ProjectImage = styled.img`
-	width: 100%;
+	aspect-ratio: 375/260;
+	max-height: 260px;
+	object-fit: cover;
 	margin-bottom: 27px;
 `
 const ProjectTitle = styled.h4`

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { font } from '../../../../styles/Common'
 import { theme } from '../../../../styles/Theme'
 import { StyledTitle } from '../StyledTitle'
 
@@ -7,10 +8,10 @@ export function AboutMe() {
 		<StyledAboutMe>
 			<StyledTitle>About Me</StyledTitle>
 			<StyledAboutText>
-				The Generator App is an online tool that helps you to export ready-made
-				templates ready to work as you r future website. It helps you to combine
-				slides, panels and other components and export it as a set of static
-				files: HTML/CSS/JS.
+				I'm an enthusiastic and detail-oriented Frontend Software Engineer
+				seeking an entry-level position with Company to use my skills in coding,
+				troubleshooting complex problems, and assisting in the timely completion
+				of projects.
 			</StyledAboutText>
 		</StyledAboutMe>
 	)
@@ -26,13 +27,11 @@ const StyledAboutMe = styled.div`
 `
 
 const StyledAboutText = styled.p`
-	font-size: 18px;
-	font-weight: 400;
-	line-height: 26px;
-	letter-spacing: 0px;
+	${font({
+		lineHeight: 1.2,
+		weight: 400,
+		Fmax: 24,
+		Fmin: 16,
+	})}
 	color: ${theme.colors.accentColor};
-	@media ${theme.media.tablet} {
-		font-size: 16px;
-		line-height: 24px;
-	}
 `
