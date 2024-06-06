@@ -52,6 +52,7 @@ const StyledProject = styled.div`
 `
 const ProjectImage = styled.img`
 	aspect-ratio: 375/260;
+	width: 100%;
 	max-height: 260px;
 	object-fit: cover;
 	margin-bottom: 27px;

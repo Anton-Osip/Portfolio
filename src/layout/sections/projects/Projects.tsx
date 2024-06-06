@@ -5,8 +5,17 @@ import pomodoro from '../../../assets/image/pomodoro.webp'
 import { Container } from '../../../components/Container'
 import { SectionSubtitle } from '../../../components/SectionSubtitle'
 import { SectionTitle } from '../../../components/SectionTitle'
+import { Tabs } from '../../../components/tabs/Tabs'
 import { theme } from '../../../styles/Theme'
 import { Project } from './project/Project'
+
+const DataTabs = [
+	{ id: 'tab1', text: 'ALL', active: true },
+	{ id: 'tab2', text: 'LANDING PAGE', active: false },
+	{ id: 'tab3', text: 'REACT', active: false },
+	{ id: 'tab4', text: 'SPA', active: false },
+]
+
 const ProjectData = [
 	{
 		id: 'pomodoro',
@@ -45,6 +54,7 @@ export function Projects() {
 			<Container>
 				<SectionTitle>Projects</SectionTitle>
 				<SectionSubtitle>Things I’ve built so far</SectionSubtitle>
+				<Tabs tabs={DataTabs} />
 				<ProjectsWrapper>
 					{ProjectData.map(project => (
 						<Project
@@ -73,6 +83,7 @@ const StyledProjects = styled.section`
 `
 
 const ProjectsWrapper = styled.section`
+	margin-top: 50px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-auto-rows: auto;
