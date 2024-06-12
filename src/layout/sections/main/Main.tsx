@@ -1,97 +1,32 @@
-import styled from 'styled-components'
-import abstract from '../../../assets/image/abstract.svg'
+import Typewriter from 'typewriter-effect'
 import photo from '../../../assets/image/photo.webp'
 import { Container } from '../../../components/Container'
 import { FlexWrapper } from '../../../components/FlexWrapper'
-import { font } from '../../../styles/Common'
-import { theme } from '../../../styles/Theme'
+import { S } from './Main_styles'
 
 export function Main() {
 	return (
-		<StyledMain>
+		<S.Main>
 			<Container>
 				<FlexWrapper align='center' justify='space-between' wrap='wrap'>
-					<MainTitle>
-						Hi 👋, My name is
-						<span> Osipchyk AV</span> I build things for web
-					</MainTitle>
-					<PhotoWrapper>
-						<Photo src={photo} alt='photo' />
-					</PhotoWrapper>
+					<S.TitleWrapper>
+						<S.Text>Hi 👋, My name is</S.Text>
+						<S.MainTitle>
+							<Typewriter
+								options={{
+									strings: ['Osipchyk AV', ''],
+									autoStart: true,
+									loop: true,
+								}}
+							/>
+						</S.MainTitle>
+						<S.Text>A Web Developer.</S.Text>
+					</S.TitleWrapper>
+					<S.PhotoWrapper>
+						<S.Photo src={photo} alt='photo' />
+					</S.PhotoWrapper>
 				</FlexWrapper>
 			</Container>
-		</StyledMain>
+		</S.Main>
 	)
 }
-const StyledMain = styled.section`
-	min-height: calc(100lvh - 157px);
-	display: flex;
-	background-image: url(${abstract});
-	background-repeat: no-repeat;
-	background-position: right center;
-
-	@media ${theme.media.tablet} {
-		min-height: calc(100lvh - 116px);
-		background-position: center bottom;
-	}
-`
-
-const MainTitle = styled.h1`
-	max-width: 505px;
-	${font({
-		lineHeight: 1.2,
-		weight: 700,
-		Fmax: 58,
-		Fmin: 32,
-	})}
-
-	letter-spacing: -1px;
-	color: ${theme.colors.mainTitleColor};
-	span {
-		white-space: nowrap;
-		background: linear-gradient(45deg, rgb(19, 176, 245), rgb(231, 15, 170));
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		color: rgb(217, 217, 217);
-	}
-	@media ${theme.media.tablet} {
-		max-width: 100%;
-		text-align: center;
-	}
-`
-
-const PhotoWrapper = styled.div`
-	position: relative;
-	@media ${theme.media.tablet} {
-		margin: 0 auto;
-	}
-
-	&::before {
-		z-index: 5;
-		content: '';
-		position: absolute;
-		top: -9px;
-		left: -9px;
-		width: 367px;
-		height: 367px;
-		border-radius: 50%;
-		background: linear-gradient(rgb(231, 15, 170), rgb(19, 176, 245));
-		@media ${theme.media.mobile} {
-			width: 300px;
-			height: 300px;
-		}
-	}
-`
-const Photo = styled.img`
-	position: relative;
-	z-index: 5;
-	width: 349px;
-	height: 349px;
-	object-fit: cover;
-	border-radius: 50%;
-	filter: contrast(100%);
-	@media ${theme.media.mobile} {
-		width: 282px;
-		height: 282px;
-	}
-`
