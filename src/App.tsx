@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
+import { Particle } from './components/particle/Particle'
 import { Header } from './layout/header/Header'
 import { About } from './layout/sections/about/About'
 import { MailMe } from './layout/sections/mailMe/MailMe'
@@ -10,6 +11,8 @@ import { Skills } from './layout/sections/skills/Skills'
 function App() {
 	return (
 		<div className='App'>
+			<Particle />
+
 			<Header />
 			<Routes>
 				<Route path='/' element={<Navigate to={'/Portfolio/home'} />} />
