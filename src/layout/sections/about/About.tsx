@@ -1,20 +1,28 @@
+import { Slide } from 'react-awesome-reveal'
 import styled from 'styled-components'
+import drawing from '../../../assets/image/drawing.svg'
 import { Container } from '../../../components/Container'
+import { GoToTop } from '../../../components/goToTop/GoToTop'
+import { theme } from '../../../styles/Theme'
 import { AboutMe } from './aboutMe/AboutMe'
 import Education from './education/Education'
 import { Work } from './work/Work'
-
-import drawing from '../../../assets/image/drawing.svg'
-import { theme } from '../../../styles/Theme'
 
 export function About() {
 	return (
 		<StyledAbout>
 			<Container>
-				<AboutMe />
-				<Work />
-				<Education />
+				<Slide>
+					<AboutMe />
+				</Slide>
+				<Slide>
+					<Work />
+				</Slide>
+				<Slide>
+					<Education />
+				</Slide>
 			</Container>
+			<GoToTop />
 		</StyledAbout>
 	)
 }

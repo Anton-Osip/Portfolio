@@ -34,7 +34,7 @@ const Text = styled.p`
 	${font({
 		lineHeight: 1.2,
 		weight: 700,
-		Fmax: 58,
+		Fmax: 54,
 		Fmin: 32,
 	})}
 
