@@ -56,7 +56,6 @@ const MainTitle = styled.h1`
 	background: linear-gradient(45deg, rgb(19, 176, 245), rgb(231, 15, 170));
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
-	color: rgb(217, 217, 217);
 `
 
 const PhotoWrapper = styled.div`
