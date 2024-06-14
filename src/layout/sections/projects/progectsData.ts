@@ -68,7 +68,7 @@ export const ProjectData = [
 	{
 		id: 'veravla',
 		imageSrc: veravla,
-		projectTitle: 'Mavic 2 Pro',
+		projectTitle: 'veravla-edu',
 		projectDescription: 'Landing page fore online school.',
 		projectStack: 'HTML5, CSS, JavaScript, Figma, Gulp',
 		link: 'https://veravla-edu.netlify.app/',
