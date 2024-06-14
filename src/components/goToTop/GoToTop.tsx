@@ -36,4 +36,5 @@ const StyledGoToBack = styled.button`
 	right: 30px;
 	background: rgba(0, 0, 0, 0.3);
 	padding: 8px;
+	z-index: 9999;
 `
