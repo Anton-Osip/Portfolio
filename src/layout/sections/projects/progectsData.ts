@@ -11,6 +11,7 @@ import seafood from '../../../assets/image/seafood.webp'
 import toystream from '../../../assets/image/toystream.webp'
 import veravla from '../../../assets/image/veravla-edu.webp'
 import xiaomi from '../../../assets/image/xiaomi.webp'
+import shelter from '../../../assets/image/shelter.png'
 
 export const ProjectData = [
 	{
@@ -44,6 +45,16 @@ export const ProjectData = [
 		link: 'https://anton-osip.github.io/nonograms-game/#main',
 		projectLink: 'https://github.com/Anton-Osip/nonograms-game',
 		type: 'spa',
+	},
+	{
+		id: 'shelter',
+		imageSrc: shelter,
+		projectTitle: 'Shelter',
+		projectDescription: 'Two-page website for animal nursery',
+		projectStack: 'HTML5, CSS, JavaScript, Figma',
+		link: 'https://anton-osip.github.io/shelter/pages/main.html',
+		projectLink: 'https://github.com/Anton-Osip/shelter',
+		type: 'landing',
 	},
 	{
 		id: 'coffeeHouse',

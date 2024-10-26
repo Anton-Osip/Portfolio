@@ -12,9 +12,9 @@ export function Menu() {
 				<li>
 					<NavLink to={'/Portfolio/about'}>About</NavLink>
 				</li>
-				<li>
-					<NavLink to={'/Portfolio/skills'}>Tech Stack</NavLink>
-				</li>
+				{/*<li>*/}
+				{/*	<NavLink to={'/Portfolio/skills'}>Tech Stack</NavLink>*/}
+				{/*</li>*/}
 				<li>
 					<NavLink to={'/Portfolio/projects'}>Projects</NavLink>
 				</li>

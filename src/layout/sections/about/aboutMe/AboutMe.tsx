@@ -13,6 +13,18 @@ export function AboutMe() {
 				troubleshooting complex problems, and assisting in the timely completion
 				of projects.
 			</StyledAboutText>
+			<StyledTitle>Tech Stack</StyledTitle>
+			HTML, CSS, SASS (SCSS) <br/>
+			TypeScript / JavaScript (ECMAScript), AJAX<br/>
+			React, Redux(Thunk) / Redux-ToolKit,<br/>
+			Formic, Yup,<br/>
+			Storybook,<br/>
+			Styled-components, AntDesigne, MaterialUI<br/>
+			Webpack / Gulp<br/>
+			Git / GitHub / GitLab<br/>
+			Adobe Photoshop, Figma<br/>
+			VS Code,WebStorm
+
 		</StyledAboutMe>
 	)
 }
@@ -34,4 +46,5 @@ const StyledAboutText = styled.p`
 		Fmin: 16,
 	})}
 	color: ${theme.colors.accentColor};
+	margin-bottom: 20px;
 `

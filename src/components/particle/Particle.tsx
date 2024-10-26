@@ -16,7 +16,8 @@ export const Particle = () => {
 		},
 		[]
 	)
-	return (
+
+	return (// @ts-ignore
 		<Particles
 			id='tsparticles'
 			init={particlesInit}
